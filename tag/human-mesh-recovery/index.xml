@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Human Mesh Recovery | </title>
+    <link>https://bochenys.github.io/tag/human-mesh-recovery/</link>
+      <atom:link href="https://bochenys.github.io/tag/human-mesh-recovery/index.xml" rel="self" type="application/rss+xml" />
+    <description>Human Mesh Recovery</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://bochenys.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Human Mesh Recovery</title>
+      <link>https://bochenys.github.io/tag/human-mesh-recovery/</link>
+    </image>
+    
+    <item>
+      <title>Real-time 3D Human Mesh Recovery for Physical AI</title>
+      <link>https://bochenys.github.io/project/hmr/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://bochenys.github.io/project/hmr/</guid>
+      <description>&lt;p&gt;For robots working around people, accurate 3D human geometry is only useful if it arrives in time to act on it. At &lt;a href=&#34;https://www.seeingmachines.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seeing Machines&lt;/a&gt;, I led the development of &lt;strong&gt;HMR&lt;/strong&gt;, a real-time Human Mesh Recovery system and one of the leading features of Seeing Machines&#39; Human-Centred Physical AI Platform.&lt;/p&gt;
+&lt;p&gt;We built HMR as a human-body expert. It combines an understanding of human semantics with 3D geometry to recover a person&amp;rsquo;s articulated pose, body shape and metric camera-frame position from a single RGB or RGB-D image. It runs entirely on the embedded device.&lt;/p&gt;
+&lt;h3 id=&#34;highlights&#34;&gt;Highlights&lt;/h3&gt;
+&lt;p&gt;On NVIDIA Jetson Thor, using the Harmony4D benchmark:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;HMR&lt;/strong&gt; reaches &lt;strong&gt;31.8 mm MPJPE at 15.8 ms&lt;/strong&gt; with 386M parameters. It is more accurate than Meta&amp;rsquo;s SAM-3D-Body (33.9 mm) with a &lt;strong&gt;~33× speed-up&lt;/strong&gt; and ~70% fewer parameters.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HMR-Lite&lt;/strong&gt; runs at &lt;strong&gt;5.5 ms (up to 180 FPS)&lt;/strong&gt; with 146M parameters. It matches the accuracy of Fast-SAM-3D-Body with a &lt;strong&gt;~20× speed-up&lt;/strong&gt; and ~88% fewer parameters.&lt;/li&gt;
+&lt;li&gt;Both models support RGB and RGB-D input without increasing their parameter counts.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-accuracy-latency-and-size-compared-on-nvidia-jetson-thor-rgb-input-harmony4d-mpjpe-bubble-area-is-proportional-to-parameter-count&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://bochenys.github.io/project/hmr/chart_huf6b150f61af27f8ae04d88b078191dec_200902_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy, latency and size compared on NVIDIA Jetson Thor (RGB input, Harmony4D MPJPE). Bubble area is proportional to parameter count.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://bochenys.github.io/project/hmr/chart_huf6b150f61af27f8ae04d88b078191dec_200902_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1518&#34; height=&#34;918&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Accuracy, latency and size compared on NVIDIA Jetson Thor (RGB input, Harmony4D MPJPE). Bubble area is proportional to parameter count.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;demo-unitree-g1-humanoid&#34;&gt;Demo: Unitree G1 humanoid&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/C45_-9HuKAM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-real-time-teleoperation-of-a-unitree-g1-using-hmr-on-nvidia-jetson-thor&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://bochenys.github.io/project/hmr/teleop_hu817602268c83fe576f0175f20ca3313b_240250_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;Real-time teleoperation of a Unitree G1 using HMR on NVIDIA Jetson Thor.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://bochenys.github.io/project/hmr/teleop_hu817602268c83fe576f0175f20ca3313b_240250_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1084&#34; height=&#34;543&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Real-time teleoperation of a Unitree G1 using HMR on NVIDIA Jetson Thor.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-hmr-lite-running-on-a-unitree-g1-outdoors-in-difficult-lighting&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://bochenys.github.io/project/hmr/outdoor_huf5b3d5fc0b7eb7343a7667072d87d9d8_355109_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;HMR-Lite running on a Unitree G1 outdoors, in difficult lighting.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://bochenys.github.io/project/hmr/outdoor_huf5b3d5fc0b7eb7343a7667072d87d9d8_355109_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1172&#34; height=&#34;768&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    HMR-Lite running on a Unitree G1 outdoors, in difficult lighting.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;how-it-works&#34;&gt;How it works&lt;/h3&gt;
+&lt;p&gt;HMR combines a &lt;strong&gt;geometry-aware foundation model&lt;/strong&gt; with a Transformer-based &lt;strong&gt;Human Mesh Decoder&lt;/strong&gt;. The foundation model can take monocular images, multi-view images and depth, and encodes both visual appearance and spatial structure. The decoder maps these features to body shape, articulated pose and camera-frame placement. The full 3D mesh and anatomical joints are then recovered from those parameters.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-hmr-design-overview&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://bochenys.github.io/project/hmr/pipeline_hua9598a1f5c4d2d1f0cddd5ee452b1b32_219570_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;HMR design overview.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://bochenys.github.io/project/hmr/pipeline_hua9598a1f5c4d2d1f0cddd5ee452b1b32_219570_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1518&#34; height=&#34;565&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    HMR design overview.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;A 3D human mesh gives robots much more than a bounding box or a skeleton. It provides anatomical landmarks, articulation, body shape, body-part geometry, spatial occupancy and, with tracking, movement over time. Robots can use this for safer shared-space operation, human-aware navigation, coordinated handover, teleoperation and robot learning.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-a-3d-human-mesh-outputs-rich-geometric-and-semantic-information&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://bochenys.github.io/project/hmr/mesh_outputs_hu11e6ffa48bff15dd07b236b26707a3b6_262656_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;A 3D human mesh outputs rich geometric and semantic information.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://bochenys.github.io/project/hmr/mesh_outputs_hu11e6ffa48bff15dd07b236b26707a3b6_262656_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1266&#34; height=&#34;906&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    A 3D human mesh outputs rich geometric and semantic information.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Read more in the &lt;a href=&#34;https://seeingmachines.com/wp-content/uploads/2026/09/Seeing-Machines-HMR-Real-time-3D-Human-Mesh-Recovery-at-up-to-180-FPS-on-NVIDIA-Jetson-Thor.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;technical paper&lt;/a&gt; and the &lt;a href=&#34;https://seeingmachines.com/giving-robots-a-real-time-understanding-of-the-people-around-them/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seeing Machines blog post&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Seeing Machines HMR: Real-time 3D Human Mesh Recovery at up to 180 FPS on NVIDIA Jetson Thor</title>
+      <link>https://bochenys.github.io/publication/hmr_whitepaper/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://bochenys.github.io/publication/hmr_whitepaper/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
