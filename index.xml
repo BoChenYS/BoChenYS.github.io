@@ -278,6 +278,71 @@
     </item>
     
     <item>
+      <title>3D Cabin Perception Mapping</title>
+      <link>https://bochenys.github.io/project/ipm/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://bochenys.github.io/project/ipm/</guid>
+      <description>&lt;p&gt;3D Cabin Perception Mapping, also called the Interior Perception Map (IPM), is &lt;a href=&#34;https://www.seeingmachines.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seeing Machines&lt;/a&gt;&#39; next-generation interior sensing platform. It was demonstrated live at &lt;strong&gt;CES 2026&lt;/strong&gt;. Exterior perception maps reconstruct the world around a vehicle; this platform builds a real-time digital reconstruction of the cabin itself.&lt;/p&gt;
+&lt;p&gt;I led the &lt;strong&gt;human-understanding&lt;/strong&gt; component of the platform. I introduced multi-view occupant reconstruction into the perception stack, which enables detailed 3D human modelling of every occupant within a holistic cabin digital twin.&lt;/p&gt;
+&lt;h3 id=&#34;a-unified-perception-layer&#34;&gt;A unified perception layer&lt;/h3&gt;
+&lt;p&gt;Traditional interior sensing builds one pipeline per feature. 3D Cabin Perception Mapping instead solves for the &lt;strong&gt;entire cabin at once&lt;/strong&gt;, from a single, high-trust perception layer. This keeps features consistent with each other and preserves accuracy when sensor data is intermittent or noisy. Because feature development is decoupled from camera configuration, features can be built once and deployed across many product configurations.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-driver-leaning-near-the-airbag-out-of-position-detection-from-the-reconstructed-3d-bodies-alongside-the-three-in-cabin-camera-views&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://bochenys.github.io/project/ipm/near_airbag_huc08928368e3fef7d93524bf744b5750b_169380_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;Driver leaning near the airbag: out-of-position detection from the reconstructed 3D bodies, alongside the three in-cabin camera views.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://bochenys.github.io/project/ipm/near_airbag_huc08928368e3fef7d93524bf744b5750b_169380_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1200&#34; height=&#34;800&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Driver leaning near the airbag: out-of-position detection from the reconstructed 3D bodies, alongside the three in-cabin camera views.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;demonstrated-at-ces-2026&#34;&gt;Demonstrated at CES 2026&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;3 cameras covering 3 rows of seating, with support for up to 7 occupants&lt;/li&gt;
+&lt;li&gt;Body size, shape and full 3D pose for all occupants, including height and weight classification&lt;/li&gt;
+&lt;li&gt;Out-of-position detection, for example reclining, feet on the dash, or a driver near the airbag&lt;/li&gt;
+&lt;li&gt;Seat configuration, such as headrest presence, seat position and recline angle&lt;/li&gt;
+&lt;li&gt;Child seat detection across the entire cabin&lt;/li&gt;
+&lt;li&gt;Detection of loose objects such as phones, bags and boxes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The architecture is designed to extend beyond automotive applications to robotics and other human–machine interaction settings, where accurate perception of people and space is critical. See also &lt;a href=&#34;https://bochenys.github.io/project/hmr/&#34;&gt;Real-time 3D Human Mesh Recovery for Physical AI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Read more in the &lt;a href=&#34;https://seeingmachines.com/3d-cabin-perception-mapping-breaks-new-ground-at-ces2026/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seeing Machines blog post&lt;/a&gt; and the &lt;a href=&#34;https://seeingmachines.com/wp-content/uploads/2026/01/SEE-PR-CES-2026-3D-Perception-Mapping-13-01-26.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;press release&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Satellite Pose Estimation Competition 2021: Results and analyses</title>
       <link>https://bochenys.github.io/publication/spec2021/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
